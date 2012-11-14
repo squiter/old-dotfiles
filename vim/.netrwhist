@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/brunno/.vim/bundle'
+let g:netrw_dirhist_2='/Users/brunno/Squiter/Brunno'
+let g:netrw_dirhist_3='/Users/brunno/projetos/ccrr'
+let g:netrw_dirhist_4='/opt/local/etc/php53'
+let g:netrw_dirhist_5='/Users/brunno/projetos/sandryfashion/trunk/wp-content/themes'
+let g:netrw_dirhist_6='/Users/brunno/projetos/sercriancaeshow'
+let g:netrw_dirhist_7='/Users/brunno/projetos/ccrr-slim'
+let g:netrw_dirhist_8='/Users/brunno/projetos/ccrr'
+let g:netrw_dirhist_9='/Users/brunno/projetos/ccrr-slim'

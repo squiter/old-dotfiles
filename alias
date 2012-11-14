@@ -1,0 +1,2 @@
+alias mysqld="sudo /opt/local/share/mysql5/mysql/mysql.server"
+alias apachectl="sudo /opt/local/apache2/bin/apachectl"
