@@ -17,6 +17,8 @@ fi
 
 # Inserting alias
 . ~/.alias
+
+# TODO: How to verify if macports are installed?
 # MacPorts Installer addition on 2012-01-10_at_17:17:25: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
