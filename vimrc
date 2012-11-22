@@ -55,6 +55,7 @@ nmap <Tab> gt
 nmap <S-Tab> gT
 
 map <F5> :NERDTree<CR>
+map <F4> :set hlsearch!<CR>
 
 "This mapping make a closed tag with a new line with tab indent
 inoremap ><Tab> ><Esc>F<lyt>o</<C-r>"><Esc>O<Tab>
