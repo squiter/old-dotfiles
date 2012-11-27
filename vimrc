@@ -49,6 +49,8 @@ set laststatus=2
 let g:Powerline_symbols = 'fancy'
 call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 
+"SnipMate
+let g:snips_author = 'Brunno dos Santos'
 "MAPS
 "key mapping for tab navigation
 nmap <Tab> gt
