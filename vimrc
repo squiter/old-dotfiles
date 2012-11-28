@@ -72,6 +72,9 @@ map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
 
+" TODO List
+noremap <Leader>td :noautocmd vimgrep /TODO/j **/*.*<CR>:cw<CR>
+
 " Print current path
 cmap <C-e> <C-r>=expand('%:p:h')<CR>/
 
