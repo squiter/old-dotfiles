@@ -28,3 +28,6 @@
 [submodule "vim/bundle/vim-rails"]
 	path = vim/bundle/vim-rails
 	url = https://github.com/tpope/vim-rails
+[submodule "vim/bundle/auto_mkdir"]
+	path = vim/bundle/auto_mkdir
+	url = git://github.com/DataWraith/auto_mkdir.git
