@@ -86,3 +86,7 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 map <leader>ctw :%s/\s\+$//<CR>
+
+" Select a text in Visual Mode and type <C+R> them text the substitution and
+" type enter
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
