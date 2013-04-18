@@ -31,3 +31,6 @@
 [submodule "vim/bundle/auto_mkdir"]
 	path = vim/bundle/auto_mkdir
 	url = git://github.com/DataWraith/auto_mkdir.git
+[submodule "vim/bundle/vim-rspec"]
+	path = vim/bundle/vim-rspec
+	url = git://github.com/thoughtbot/vim-rspec.git

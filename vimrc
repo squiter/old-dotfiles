@@ -90,3 +90,9 @@ map <leader>ctw :%s/\s\+$//<CR>
 " Select a text in Visual Mode and type <C+R> them text the substitution and
 " type enter
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+
+
+" RSpec-Vim maps
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
