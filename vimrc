@@ -96,3 +96,6 @@ vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
+
+" Adding configuration to use Ag.vim
+" let g:agprg="<custom-ag-path-goes-here> --column"
