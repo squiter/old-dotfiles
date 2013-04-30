@@ -37,3 +37,6 @@
 [submodule "vim/bundle/ag.vim"]
 	path = vim/bundle/ag.vim
 	url = git://github.com/rking/ag.vim
+[submodule "vim/bundle/matchtag"]
+	path = vim/bundle/matchtag
+	url = git://github.com/gregsexton/MatchTag.git
