@@ -11,7 +11,6 @@ set undolevels=1000
 
 "highlight all the matches in search
 set hlsearch
-nnoremap <F3> :set hlsearch!<CR>
 
 "Colorscheme
 set background=dark
