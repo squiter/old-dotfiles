@@ -1,6 +1,3 @@
-[submodule "vim/bundle/snipmate"]
-	path = vim/bundle/snipmate
-	url = https://github.com/msanders/snipmate.vim.git
 [submodule "vim/bundle/ctrlp"]
 	path = vim/bundle/ctrlp
 	url = git://github.com/kien/ctrlp.vim.git
@@ -40,3 +37,6 @@
 [submodule "vim/bundle/matchtag"]
 	path = vim/bundle/matchtag
 	url = git://github.com/gregsexton/MatchTag.git
+[submodule "vim/bundle/snipmate.vim"]
+	path = vim/bundle/snipmate.vim
+	url = git://github.com/msanders/snipmate.vim.git
