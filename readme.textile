@@ -2,7 +2,9 @@ h1. Installation:
 
 <pre><code>git clone git://github.com/squiter85/dotfiles.git
 cd dotfiles
-sh install.sh</code></pre>
+sh install.sh
+git submodule init
+git submodule update</code></pre>
 
 h2. License:
 
