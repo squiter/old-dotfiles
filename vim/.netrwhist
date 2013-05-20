@@ -1,5 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/Users/brunno/projetos/ccrr-slim'
 let g:netrw_dirhist_2='/Users/brunno/projetos/rretiquetas/trunk/wp-content/themes/rr-etiquetas'
 let g:netrw_dirhist_3='/Users/brunno/Squiter/Manga-no-Mori/spec/factories'
+let g:netrw_dirhist_4='/Users/brunno/projetos/financeiro/app/controllers'
+let g:netrw_dirhist_5='/Users/brunno/projetos/financeiro/app/models'
+let g:netrw_dirhist_6='/Users/brunno/projetos/financeiro/app/views/customers'
+let g:netrw_dirhist_7='/Users/brunno/projetos/financeiro'
+let g:netrw_dirhist_8='/Users/brunno/projetos/financeiro/app/views/commons'
