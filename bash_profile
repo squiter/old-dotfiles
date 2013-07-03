@@ -3,6 +3,9 @@ YELLOW="\[\033[0;33m\]"
 GREEN="\[\033[0;32m\]"
 DEFAULT_COLOR="\[\e[0m\]"
 
+export LC_ALL=en_US.utf-8
+export LANG=en_US.utf-8
+
 function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
