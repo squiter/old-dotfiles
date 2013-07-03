@@ -49,8 +49,9 @@ endif
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 "Vim-Powerline
+"I must to patched myself my own font
 set laststatus=2
-"let g:Powerline_symbols = 'fancy'
+let g:Powerline_symbols = 'fancy'
 call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 
 "SnipMate
