@@ -37,16 +37,20 @@ filetype plugin indent on
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_start_level = 1
 let g:indent_guides_guide_size = 2
-let g:indent_guides_auto_colors = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=darkgray ctermbg=236
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=darkgray ctermbg=237
+if has("gui_macvim")
+  let g:indent_guides_auto_colors = 1
+else
+  let g:indent_guides_auto_colors = 0
+  autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=darkgray ctermbg=236
+  autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=darkgray ctermbg=237
+endif
 
 "CtrlP - Substituto do cmd+t
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 "Vim-Powerline
 set laststatus=2
-let g:Powerline_symbols = 'fancy'
+"let g:Powerline_symbols = 'fancy'
 call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 
 "SnipMate
