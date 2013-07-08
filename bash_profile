@@ -1,6 +1,8 @@
 RED="\[\033[0;31m\]"
+MAGENTA="\[\033[0;35m\]"
 YELLOW="\[\033[0;33m\]"
 GREEN="\[\033[0;32m\]"
+CYAN="\[\033[1;36m\]"
 DEFAULT_COLOR="\[\e[0m\]"
 
 export LC_ALL=en_US.utf-8
@@ -12,7 +14,7 @@ function parse_git_branch {
 
 # Showing RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-PS1="$RED[\$(~/.rvm/bin/rvm-prompt)]$YELLOW\$(parse_git_branch)$DEFAULT_COLOR $PS1"
+PS1="$MAGENTA[\$(~/.rvm/bin/rvm-prompt)]$YELLOW\$(parse_git_branch)$DEFAULT_COLOR $PS1"
 
 if [ -f /opt/local/etc/bash_completion ]; then
   . /opt/local/etc/bash_completion
