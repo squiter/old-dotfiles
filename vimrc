@@ -9,6 +9,10 @@ set ignorecase
 set smartcase           "ignore case if search pattern is all in lowercase
 set undolevels=1000
 
+" CTRL+X e CRTL+C to cut and copy in OSX
+vmap <C-x> :!pbcopy<cr>
+vmap <C-c> :w !pbcopy<cr><cr>
+
 "highlight all the matches in search
 set hlsearch
 

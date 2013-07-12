@@ -36,4 +36,4 @@ PROMPT_TITLE='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"'
 export PROMPT_COMMAND="${PROMPT_COMMAND} ${PROMPT_TITLE}; "
 
 # Add ~/bin to my PATH
-PATH=$PATH:$HOME/bin
+PATH=/usr/local/bin:$PATH:$HOME/bin
