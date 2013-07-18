@@ -20,6 +20,10 @@ if [ -f /opt/local/etc/bash_completion ]; then
   . /opt/local/etc/bash_completion
 fi
 
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 # Inserting alias
 . ~/.alias
 
