@@ -108,3 +108,6 @@ map <Leader>l :call RunLastSpec()<CR>
 
 " Adding configuration to use Ag.vim
 " let g:agprg="<custom-ag-path-goes-here> --column"
+
+" Map to use Tabularize to indent Ruby 1.9 hashes
+map <Leader>i :Tab/\w:\zs/l0l1<CR>
