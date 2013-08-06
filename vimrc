@@ -111,3 +111,7 @@ map <Leader>l :call RunLastSpec()<CR>
 
 " Map to use Tabularize to indent Ruby 1.9 hashes
 map <Leader>i :Tab/\w:\zs/l0l1<CR>
+
+" Maps for windows management
+map <C-Up> <C-w>_
+map <C-Down> <C-w>=
