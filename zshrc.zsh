@@ -14,7 +14,7 @@ export RPROMPT="\$(~/.rvm/bin/rvm-prompt)"
 ZSH_THEME="agnoster"
 
 # Example aliases
-alias zshconfig="vim ~/dotfiles/zshrc"
+alias zshconfig="vim ~/dotfiles/zshrc.zsh"
 alias ohmyzsh="vim ~/dotfiles/oh-my-zsh"
 
 # Set to this to use case-sensitive completion
@@ -46,11 +46,15 @@ alias ohmyzsh="vim ~/dotfiles/oh-my-zsh"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rails rails3 bundler ruby brew rvm capistrano heroku rake pip github zsh-syntax-highlighting)
+plugins=(git rails rails3 bundler ruby brew rvm capistrano heroku rake pip github zsh-syntax-highlighting themes)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+# Custom plgin
+source $HOME/dotfiles/custom-zsh/squiter-proj-dir.plugin.zsh
+source $HOME/dotfiles/custom-zsh/squiter-loca-dir.plugin.zsh
 
 # Add ~/bin to my PATH
 export PATH=/usr/local/bin:$PATH:$HOME/bin
