@@ -53,8 +53,10 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 # Custom plgin
-source $HOME/dotfiles/custom-zsh/squiter-proj-dir.plugin.zsh
-source $HOME/dotfiles/custom-zsh/squiter-loca-dir.plugin.zsh
+CUSTOM_ZSH=$HOME/dotfiles/custom-zsh
+source $CUSTOM_ZSH/squiter-proj-dir.plugin.zsh
+source $CUSTOM_ZSH/squiter-loca-dir.plugin.zsh
+source $CUSTOM_ZSH/locaweb-deploy-tools.plugin.zsh
 
 # Add ~/bin to my PATH
 export PATH=/usr/local/bin:$PATH:$HOME/bin
