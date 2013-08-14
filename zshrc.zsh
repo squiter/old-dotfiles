@@ -58,8 +58,14 @@ source $CUSTOM_ZSH/squiter-proj-dir.plugin.zsh
 source $CUSTOM_ZSH/squiter-loca-dir.plugin.zsh
 source $CUSTOM_ZSH/locaweb-deploy-tools.plugin.zsh
 
+# Using Tmuxinator
+source $HOME/dotfiles/bin/tmuxinator.zsh
+
 # Add ~/bin to my PATH
 export PATH=/usr/local/bin:$PATH:$HOME/bin
 
 export LC_ALL=en_US.utf-8
 export LANG=en_US.utf-8
+
+export EDITOR='vim'
+export DISABLE_AUTO_TITLE=true
