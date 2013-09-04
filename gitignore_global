@@ -39,6 +39,7 @@ Thumbs.db
 .rvmrc
 .irbrc
 *.swp
+.bundle
 
 # Vagrant files #
 #################
