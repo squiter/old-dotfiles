@@ -16,6 +16,8 @@ ZSH_THEME="agnoster"
 # Example aliases
 alias zshconfig="vim ~/dotfiles/zshrc.zsh"
 alias ohmyzsh="vim ~/dotfiles/oh-my-zsh"
+# Open the last directory
+alias cdlast='cd $( ls -lt | grep d | head -1 |  cut -b 49- )'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -69,3 +71,9 @@ export LANG=en_US.utf-8
 
 export EDITOR='vim'
 export DISABLE_AUTO_TITLE=true
+
+# Adding a command to show my current e-mail for this repository.
+# This is the solution to use a different email in work enviroment.
+git() { if [[ $1 == "clone" ]]; then command git "$@"  && echo "===================================================" && cdlast && git config user.email; else command git "$@"; fi; }
+git() { if [[ $1 == "status" ]]; then command git "$@"  && echo "===================================================" && git config user.email; else command git "$@"; fi; }
+git() { if [[ $1 == "st" ]]; then command git "$@"  && echo "===================================================" && git config user.email; else command git "$@"; fi; }
