@@ -19,6 +19,9 @@ alias ohmyzsh="vim ~/dotfiles/oh-my-zsh"
 # Open the last directory
 alias cdlast='cd $( ls -lt | grep d | head -1 |  cut -b 49- )'
 
+#function to create and go to folder :)
+function mcd() {   [ -n "$1" ] && mkdir -p "$@" && cd "$1";   }
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
