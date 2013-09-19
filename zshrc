@@ -75,6 +75,11 @@ export LANG=en_US.utf-8
 export EDITOR='vim'
 export DISABLE_AUTO_TITLE=true
 
+# fix for RVM
+if [ -f $HOME/.rvm/scripts/rvm ]; then
+  source $HOME/.rvm/scripts/rvm
+fi
+
 # Adding a command to show my current e-mail for this repository.
 # This is the solution to use a different email in work enviroment.
 git() { if [[ $1 == "clone" ]]; then command git "$@"  && echo "===================================================" && cdlast && git config user.email; else command git "$@"; fi; }
