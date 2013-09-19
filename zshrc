@@ -80,3 +80,9 @@ export DISABLE_AUTO_TITLE=true
 git() { if [[ $1 == "clone" ]]; then command git "$@"  && echo "===================================================" && cdlast && git config user.email; else command git "$@"; fi; }
 git() { if [[ $1 == "status" ]]; then command git "$@"  && echo "===================================================" && git config user.email; else command git "$@"; fi; }
 git() { if [[ $1 == "st" ]]; then command git "$@"  && echo "===================================================" && git config user.email; else command git "$@"; fi; }
+
+
+# Adding specific configurations by enviroment
+if [ -f $HOME/.zsh_custons ]; then
+  source $HOME/.zsh_custons
+fi

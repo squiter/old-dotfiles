@@ -12,6 +12,8 @@ Set zsh as default shell
 <pre><code>chsh -s /bin/zsh
 </code></pre>
 
+To add custom configurations just add it into `~/.zsh_custons`
+
 h2. License:
 
 <pre><code>            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
