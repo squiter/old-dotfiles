@@ -14,7 +14,7 @@ export RPROMPT="\$(~/.rvm/bin/rvm-prompt)"
 ZSH_THEME="agnoster"
 
 # Example aliases
-alias zshconfig="vim ~/dotfiles/zshrc.zsh"
+alias zshconfig="vim ~/dotfiles/zshrc"
 alias ohmyzsh="vim ~/dotfiles/oh-my-zsh"
 # Open the last directory
 alias cdlast='cd $( ls -lt | grep d | head -1 |  cut -b 49- )'
