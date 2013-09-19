@@ -67,7 +67,7 @@ source $CUSTOM_ZSH/locaweb-deploy-tools.plugin.zsh
 source $HOME/dotfiles/bin/tmuxinator.zsh
 
 # Add ~/bin to my PATH
-export PATH=/usr/local/bin:$PATH:$HOME/bin
+export PATH=/usr/local/bin:$PATH:$HOME/bin:$HOME/.rvm/bin
 
 export LC_ALL=en_US.utf-8
 export LANG=en_US.utf-8
