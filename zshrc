@@ -61,6 +61,7 @@ source $ZSH/oh-my-zsh.sh
 CUSTOM_ZSH=$HOME/dotfiles/custom-zsh
 source $CUSTOM_ZSH/squiter-proj-dir.plugin.zsh
 source $CUSTOM_ZSH/squiter-loca-dir.plugin.zsh
+source $CUSTOM_ZSH/git_functions.plugin.zsh
 source $CUSTOM_ZSH/locaweb-deploy-tools.plugin.zsh
 
 # Using Tmuxinator
