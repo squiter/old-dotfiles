@@ -3,8 +3,14 @@ h1. Installation:
 <pre><code>git clone git://github.com/squiter85/dotfiles.git
 cd dotfiles
 sh install.sh
-git submodule init
-git submodule update</code></pre>
+</code></pre>
+Initialize and update all submodules
+<pre><code>git submodule init
+git submodule update
+</code></pre>
+Set zsh as default shell
+<pre><code>chsh -s /bin/zsh
+</code></pre>
 
 h2. License:
 
