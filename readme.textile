@@ -12,7 +12,7 @@ Set zsh as default shell
 <pre><code>chsh -s /bin/zsh
 </code></pre>
 
-To add custom configurations just add it into `~/.zsh_custons`
+To add custom configurations just add it into @~/.zsh_custons@
 
 h2. License:
 
