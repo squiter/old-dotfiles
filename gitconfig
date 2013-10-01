@@ -1,5 +1,5 @@
 [core]
-  editor = mate -w
+  editor = vim
   excludesfile = ~/.gitignore_global
 [user]
   name = Brunno dos Santos
@@ -35,4 +35,4 @@
   changed = green
   untracked = cyan
 [push]
-	default = simple
+  default = simple
