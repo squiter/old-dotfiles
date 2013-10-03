@@ -15,6 +15,7 @@
   who = shortlog -s --
   type = cat-file -t
   dump = cat-file -p
+  pr = pull --rebase
 [color]
   branch = auto
   diff = auto
