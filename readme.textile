@@ -14,6 +14,8 @@ Set zsh as default shell
 
 To add custom configurations just add it into @~/.zsh_custons@
 
+To use Taglist plugin, just install ctgas with: @brew install ctags@
+
 h2. License:
 
 <pre><code>            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE

@@ -9,6 +9,10 @@ set ignorecase
 set smartcase           "ignore case if search pattern is all in lowercase
 set undolevels=1000
 
+" Fixing ctags path to use ctags installed by homebrew
+let Tlist_Ctags_Cmd="/usr/local/Cellar/ctags/5.8/bin/ctags"
+map <F6> :TlistToggle<CR>
+
 " CTRL+X e CRTL+C to cut and copy in OSX
 vmap <C-x> :!pbcopy<cr>
 vmap <C-c> :w !pbcopy<cr><cr>
@@ -61,15 +65,16 @@ call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 "SnipMate
 let g:snips_author = 'Brunno dos Santos'
 "MAPS
-"key mapping for tab navigation
-nmap <Tab> gt
-nmap <S-Tab> gT
 
 map <F5> :NERDTree<CR>
 map <F4> :set hlsearch!<CR>
 
 "This mapping make a closed tag with a new line with tab indent
 inoremap ><Tab> ><Esc>F<lyt>o</<C-r>"><Esc>O<Tab>
+
+"key mapping for tab navigation
+nmap <Tab> gt
+nmap <S-Tab> gT
 
 " Tab mappings.
 map <leader>te :tabedit
