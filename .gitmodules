@@ -55,3 +55,6 @@
 [submodule "vim/bundle/vim-wakatime"]
 	path = vim/bundle/vim-wakatime
 	url = https://github.com/wakatime/vim-wakatime.git
+[submodule "vim/bundle/vim-solarized-powerline"]
+	path = vim/bundle/vim-solarized-powerline
+	url = git@github.com:stephenmckinney/vim-solarized-powerline.git

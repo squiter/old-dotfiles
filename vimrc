@@ -11,7 +11,7 @@ set undolevels=1000
 
 " Fixing ctags path to use ctags installed by homebrew
 let Tlist_Ctags_Cmd="/usr/local/Cellar/ctags/5.8/bin/ctags"
-map <F6> :TlistToggle<CR>
+map <F6> :TlistOpen<CR>
 
 " CTRL+X e CRTL+C to cut and copy in OSX
 vmap <C-x> :!pbcopy<cr>
@@ -23,7 +23,8 @@ set hlsearch
 "Colorscheme
 set background=dark
 set t_Co=256
-colorscheme jellybeans
+"colorscheme jellybeans
+colorscheme solarized
 
 if has("gui_macvim")
   colorscheme railscasts
@@ -61,6 +62,8 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 set laststatus=2
 let g:Powerline_symbols = 'fancy'
 call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
+"let g:Powerline_theme='short'
+let g:Powerline_colorscheme='solarized256_dark'
 
 "SnipMate
 let g:snips_author = 'Brunno dos Santos'
