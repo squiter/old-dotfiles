@@ -58,3 +58,6 @@
 [submodule "vim/bundle/vim-solarized-powerline"]
 	path = vim/bundle/vim-solarized-powerline
 	url = git@github.com:stephenmckinney/vim-solarized-powerline.git
+[submodule "vim/bundle/vim-multiple-cursors"]
+	path = vim/bundle/vim-multiple-cursors
+	url = git@github.com:terryma/vim-multiple-cursors.git
