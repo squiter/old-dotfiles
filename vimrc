@@ -2,16 +2,29 @@ call pathogen#infect()
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
+" Quickly edit/reload the vimrc file
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
 set encoding=utf-8
 set mouse=a
 set nu
 set ignorecase
 set smartcase           "ignore case if search pattern is all in lowercase
 set undolevels=1000
-" hide buffers instead of closing them when you :q, keeping their undo history
-set hidden
-"highlight all the matches in search
-set hlsearch
+set hidden              "hide buffers instead of closing them when you :q, keeping their undo history
+set hlsearch            "highlight all the matches in search
+set incsearch           "show search matches as you type
+
+"Don't let Vim write backup files, I used GIT to backup! ;)
+set nobackup
+set noswapfile
+
+" Forget about shitt+; to use : to run commands ;)
+nnoremap ; :
+
+" To save a file that must be need a sudo permission! eg. /etc/hosts
+cmap w!! w !sudo tee % >/dev/null
 
 "Colorscheme
 set background=dark
@@ -57,6 +70,7 @@ source ~/dotfiles/vim_custom/vimrc_taglist
 
 map <F5> :NERDTree<CR>
 map <F4> :set hlsearch!<CR>
+map <F2> :set paste!<CR>
 
 " CTRL+X e CRTL+C to cut and copy in OSX
 vmap <C-x> :!pbcopy<cr>
@@ -88,3 +102,5 @@ cmap <C-e> <C-r>=expand('%:p:h')<CR>/
 " Select a text in Visual Mode and type <C+R> them text the substitution and
 " type enter
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+
+map <leader>tt :set noet ci pi sts=0 sw=4 ts=4<cr>
