@@ -64,3 +64,6 @@
 [submodule "vim/bundle/vim-ctrlspace"]
 	path = vim/bundle/vim-ctrlspace
 	url = git@github.com:szw/vim-ctrlspace.git
+[submodule "vim/bundle/vim-maximizer"]
+	path = vim/bundle/vim-maximizer
+	url = git@github.com:szw/vim-maximizer.git
