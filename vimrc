@@ -77,6 +77,9 @@ map <F2> :set paste!<CR>
 vmap <C-x> :!pbcopy<cr>
 vmap <C-c> :w !pbcopy<cr><cr>
 
+" To break a line from Normal mode
+:nnoremap <NL> i<CR><ESC>
+
 "This mapping make a closed tag with a new line with tab indent
 inoremap ><Tab> ><Esc>F<lyt>o</<C-r>"><Esc>O<Tab>
 
