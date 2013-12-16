@@ -67,3 +67,6 @@
 [submodule "vim/bundle/vim-maximizer"]
 	path = vim/bundle/vim-maximizer
 	url = git@github.com:szw/vim-maximizer.git
+[submodule "vim/bundle/nextag"]
+	path = vim/bundle/nextag
+	url = git@github.com:tejr/nextag.git
