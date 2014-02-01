@@ -3,7 +3,7 @@ files=( bash_profile alias vim vimrc gitconfig gitignore_global tmux.conf zshrc 
 for filename in ${files[@]}
 do
 [[ -s $HOME/.$filename ]] && rm -rf $HOME/.$filename
-  ln -s $PWD/$filename ~/.$filename
+  ln -sfi $PWD/$filename ~/.$filename
 done
 
 source ~/.bash_profile
