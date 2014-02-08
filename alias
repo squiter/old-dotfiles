@@ -1,2 +1,11 @@
 alias mysqld="sudo /opt/local/share/mysql5/mysql/mysql.server"
 alias apachectl="sudo /opt/local/apache2/bin/apachectl"
+
+alias pg-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+
+# Open the last directory
+alias cdlast='cd $( ls -lt | grep d | head -1 |  cut -b 49- )'
+
+# Locaweb Alias
+alias nibbler='ssh -i ~/.ssh/id_rsa_gateway _bsantos@nibbler0001.linux.locaweb.com.br'

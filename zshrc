@@ -16,11 +16,8 @@ ZSH_THEME="agnoster"
 # Example aliases
 alias zshconfig="vim ~/dotfiles/zshrc"
 alias ohmyzsh="vim ~/dotfiles/oh-my-zsh"
-# Open the last directory
-alias cdlast='cd $( ls -lt | grep d | head -1 |  cut -b 49- )'
 
-# Locaweb Alias
-alias nibbler='ssh -i ~/.ssh/id_rsa_gateway _bsantos@nibbler0001.linux.locaweb.com.br'
+source $HOME/dotfiles/alias
 
 #function to create and go to folder :)
 function mcd() {   [ -n "$1" ] && mkdir -p "$@" && cd "$1";   }
