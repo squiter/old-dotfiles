@@ -1,4 +1,4 @@
-files=( bash_profile alias vim vimrc gitconfig gitignore_global tmux.conf zshrc bin )
+files=( bash_profile alias vim vimrc gitconfig gitignore_global git-templates tmux.conf zshrc bin )
 
 for filename in ${files[@]}
 do

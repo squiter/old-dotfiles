@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Copy last commit hash to clipboard on commit
+echo "Copying commit hash to clipboard..."
+git log -1 --format=format:%h | pbcopy
+
+# Add other post-commit hooks
