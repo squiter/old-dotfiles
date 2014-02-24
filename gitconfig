@@ -39,3 +39,5 @@
   default = simple
 [init]
   templatedir = ~/.git-templates
+[clone]
+  templatedir = ~/.git-templates
