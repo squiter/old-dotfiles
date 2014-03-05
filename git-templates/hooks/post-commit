@@ -15,6 +15,7 @@ if [ -e $file ]; then
   size=${#lines[@]}
   to_show=$(($RANDOM%$size))
   echo "==> "${lines[$to_show]}
+  echo "=============================="
 else
   echo "No tips or todo's today! :)"
 fi
