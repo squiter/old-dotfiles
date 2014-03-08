@@ -5,7 +5,13 @@ ZSH=$HOME/dotfiles/oh-my-zsh
 export DEFAULT_USER="squiter"
 
 # Add RVM to agnoster theme
-export RPROMPT="\$(~/.rvm/bin/rvm-prompt)"
+export RPROMPT="\$(~/.rvm/bin/rvm-prompt) [%D{%L:%M:%S %p}]"
+
+TMOUT=1
+
+TRAPALRM() {
+  zle reset-prompt
+}
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
