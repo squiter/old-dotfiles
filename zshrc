@@ -4,6 +4,9 @@ ZSH=$HOME/dotfiles/oh-my-zsh
 # Export the DFAULT_USER variable
 export DEFAULT_USER="squiter"
 
+# Forcing TERM to use 256 Colors - Fix Tmux wrong colors
+export TERM="xterm-256color"
+
 # Add RVM to agnoster theme
 export RPROMPT="\$(~/.rvm/bin/rvm-prompt) [%D{%L:%M:%S %p}]"
 
