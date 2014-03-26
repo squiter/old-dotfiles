@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/dotfiles/oh-my-zsh
 
-# Export the EFAULT_USER variable
+# Export the DFAULT_USER variable
 export DEFAULT_USER="squiter"
 
 # Add RVM to agnoster theme
