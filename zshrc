@@ -105,3 +105,6 @@ fi
 
 # Set the environment variable for the docker daemon
 export DOCKER_HOST=tcp://127.0.0.1:4243
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
