@@ -91,13 +91,6 @@ if [ -f $HOME/.rvm/scripts/rvm ]; then
   source $HOME/.rvm/scripts/rvm
 fi
 
-# Adding a command to show my current e-mail for this repository.
-# This is the solution to use a different email in work enviroment.
-git() { if [[ $1 == "clone" ]]; then command git "$@"  && echo "===================================================" && cdlast && git config user.email; else command git "$@"; fi; }
-git() { if [[ $1 == "status" ]]; then command git "$@"  && echo "===================================================" && git config user.email; else command git "$@"; fi; }
-git() { if [[ $1 == "st" ]]; then command git "$@"  && echo "===================================================" && git config user.email; else command git "$@"; fi; }
-
-
 # Adding specific configurations by enviroment
 if [ -f $HOME/.zsh_custons ]; then
   source $HOME/.zsh_custons

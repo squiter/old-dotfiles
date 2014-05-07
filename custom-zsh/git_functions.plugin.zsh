@@ -18,3 +18,8 @@ function next_tag(){
    fi
 }
 
+# Adding a command to show my current e-mail for this repository.
+# This is the solution to use a different email in work enviroment.
+git() { if [[ $1 == "clone" ]]; then command git "$@"  && echo "===================================================" && cdlast && git config user.email; else command git "$@"; fi; }
+git() { if [[ $1 == "status" ]]; then command git "$@"  && echo "===================================================" && git config user.email; else command git "$@"; fi; }
+git() { if [[ $1 == "st" ]]; then command git "$@"  && echo "===================================================" && git config user.email; else command git "$@"; fi; }
