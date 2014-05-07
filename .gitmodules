@@ -34,12 +34,6 @@
 [submodule "vim/bundle/ag.vim"]
 	path = vim/bundle/ag.vim
 	url = git://github.com/rking/ag.vim
-[submodule "vim/bundle/matchtag"]
-	path = vim/bundle/matchtag
-	url = git://github.com/gregsexton/MatchTag.git
-[submodule "vim/bundle/snipmate.vim"]
-	path = vim/bundle/snipmate.vim
-	url = git://github.com/msanders/snipmate.vim.git
 [submodule "vim/bundle/vim-dispatch"]
 	path = vim/bundle/vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git
@@ -58,18 +52,12 @@
 [submodule "vim/bundle/vim-solarized-powerline"]
 	path = vim/bundle/vim-solarized-powerline
 	url = git@github.com:stephenmckinney/vim-solarized-powerline.git
-[submodule "vim/bundle/vim-multiple-cursors"]
-	path = vim/bundle/vim-multiple-cursors
-	url = git@github.com:terryma/vim-multiple-cursors.git
 [submodule "vim/bundle/vim-ctrlspace"]
 	path = vim/bundle/vim-ctrlspace
 	url = git@github.com:szw/vim-ctrlspace.git
 [submodule "vim/bundle/vim-maximizer"]
 	path = vim/bundle/vim-maximizer
 	url = git@github.com:szw/vim-maximizer.git
-[submodule "vim/bundle/nextag"]
-	path = vim/bundle/nextag
-	url = git@github.com:tejr/nextag.git
 [submodule "vim/bundle/vim-surround"]
 	path = vim/bundle/vim-surround
 	url = git@github.com:tpope/vim-surround.git
