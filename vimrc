@@ -32,6 +32,7 @@ set t_Co=256
 "colorscheme jellybeans
 colorscheme solarized
 
+" If the code inside this 'if' grow, I must move them to .gvimrc
 if has("gui_macvim")
   colorscheme railscasts
 endif
