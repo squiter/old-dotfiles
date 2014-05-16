@@ -68,6 +68,9 @@ source ~/dotfiles/vim_custom/vimrc_tabularize
 source ~/dotfiles/vim_custom/vimrc_taglist
 source ~/dotfiles/vim_custom/vimrc_ctrl_space
 
+" To enable the matchers of Vim
+runtime macros/matchit.vim
+
 " ==== VIM MAPS ====
 
 map <F5> :NERDTree<CR>
