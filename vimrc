@@ -8,7 +8,7 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 set encoding=utf-8
 set mouse=a
-set nu
+set nu rnu
 set ignorecase
 set smartcase           "ignore case if search pattern is all in lowercase
 set undolevels=1000
@@ -49,6 +49,12 @@ set expandtab
 set autoindent
 filetype plugin indent on
 
+" If this Vim have autocmd command
+if has("autocmd")
+  " Setting Gemfile as ruby files
+  autocmd BufNewFile,BufRead Gemfile setfiletype ruby
+endif
+
 " Highlight Whitespaces
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
@@ -81,6 +87,10 @@ map <F2> :set paste!<CR>
 vmap <C-x> :!pbcopy<cr>
 vmap <C-c> :w !pbcopy<cr><cr>
 
+" OSX Clipboard works with y, d and p - Make shure to install vim using:
+" brew install vim
+set clipboard=unnamed
+
 " To break a line from Normal mode
 :nnoremap <NL> i<CR><ESC>
 
@@ -112,3 +122,11 @@ cmap <C-e> <C-r>=expand('%:p:h')<CR>/
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 
 map <leader>tt :set noet ci pi sts=0 sw=4 ts=4<cr>
+
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
+
+" Configurations to speed up Vim
+set lazyredraw          " Wait to redraw
+set scrolljump=8        " Scroll 8 lines at a time at bottom/top
+let html_no_rendering=1 " Don't render italic, bold, links in HTML

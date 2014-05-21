@@ -77,9 +77,6 @@ source $CUSTOM_ZSH/squiter-osx.plugin.zsh
 # Using Tmuxinator
 source $HOME/dotfiles/bin/tmuxinator.zsh
 
-# Add ~/bin to my PATH
-export PATH=/usr/local/bin:$PATH:$HOME/bin:$HOME/.rvm/bin
-
 export LC_ALL=en_US.utf-8
 export LANG=en_US.utf-8
 
@@ -98,6 +95,9 @@ fi
 
 # Set the environment variable for the docker daemon
 export DOCKER_HOST=tcp://127.0.0.1:4243
+
+# Add ~/bin to my PATH
+export PATH=/usr/local/bin:$PATH:$HOME/bin:$HOME/.rvm/bin
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
