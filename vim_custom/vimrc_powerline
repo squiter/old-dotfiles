@@ -1,10 +1,5 @@
 " VIM PLUGIN CONFIG
 " VIM-POWERLINE
 
-"Vim-Powerline
-"I must to patched myself my own font
+set rtp+=~/dotfiles/powerline/powerline/bindings/vim
 set laststatus=2
-let g:Powerline_symbols = 'fancy'
-call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
-"let g:Powerline_theme='short'
-let g:Powerline_colorscheme='solarized256_dark'

@@ -64,3 +64,6 @@
 [submodule "vim/bundle/vim-textobj-rubyblock"]
 	path = vim/bundle/vim-textobj-rubyblock
 	url = git@github.com:nelstrom/vim-textobj-rubyblock.git
+[submodule "powerline"]
+	path = powerline
+	url = git://github.com/Lokaltog/powerline
