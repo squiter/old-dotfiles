@@ -100,4 +100,4 @@ export DOCKER_HOST=tcp://127.0.0.1:4243
 export PATH=/usr/local/bin:$PATH:$HOME/bin:$HOME/.rvm/bin
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/heroku/bin:$HOME/dotfiles/powerline/scripts:$PATH"
