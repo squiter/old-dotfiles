@@ -14,12 +14,20 @@
   "segments": {
     "right": [
     {
+      "name": "uptime",
+      "priority": 50
+    },
+    {
       "name": "external_ip",
       "priority": 50
     },
     {
-      "name": "uptime",
-      "priority": 50
+      "name": "weather",
+      "priority": 50,
+      "args": {
+        "unit": "C",
+        "location_query": "sao_paulo, brazil"
+      }
     },
     {
       "name": "system_load",
@@ -35,6 +43,6 @@
         "istime": true
       }
     }
-      ]
+    ]
   }
 }
