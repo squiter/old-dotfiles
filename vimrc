@@ -17,6 +17,9 @@ set cursorline          "show a hightlight line in cursor
 " brew install vim
 set clipboard=unnamed
 
+" make backspace work like most other apps
+set backspace=2
+
 "Don't let Vim write backup files, I used GIT to backup! ;)
 set nobackup
 set noswapfile
