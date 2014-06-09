@@ -136,3 +136,6 @@ map <leader>tt :set noet ci pi sts=0 sw=4 ts=4<cr>
 
 " Clear White Spaces
 map <leader>ctw :%s/\s\+$//<CR>
+
+" Adding = as 'underlines'
+map h1 yypVr=o
