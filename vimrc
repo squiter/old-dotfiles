@@ -33,18 +33,12 @@ set scrolljump=8        " Scroll 8 lines at a time at bottom/top
 let html_no_rendering=1 " Don't render italic, bold, links in HTML
 
 "Colorscheme
+syntax on
 set background=dark
 set t_Co=256
+let base16colorspace=256  " Access colors present in 256 colorspace
 
-"colorscheme jellybeans
-colorscheme solarized
-
-" If the code inside this 'if' grow, I must move them to .gvimrc
-if has("gui_macvim")
-  colorscheme railscasts
-endif
-
-syntax on
+colorscheme base16-twilight
 
 "improve autocomplete menu color
 highlight Pmenu ctermbg=238 gui=bold
