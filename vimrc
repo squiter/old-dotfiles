@@ -73,6 +73,7 @@ source ~/dotfiles/vim_custom/vimrc_rspec
 source ~/dotfiles/vim_custom/vimrc_tabularize
 source ~/dotfiles/vim_custom/vimrc_taglist
 source ~/dotfiles/vim_custom/vimrc_neocomplcache
+source ~/dotfiles/vim_custom/vimrc_gundo
 
 " To enable the matchers of Vim
 runtime macros/matchit.vim
