@@ -70,9 +70,6 @@
 [submodule "config/base16-shell"]
 	path = config/base16-shell
 	url = git@github.com:chriskempson/base16-shell.git
-[submodule "vim/bundle/neocomplcache"]
-	path = vim/bundle/neocomplcache
-	url = https://github.com/Shougo/neocomplcache.vim
 [submodule "vim/bundle/vim-endwise"]
 	path = vim/bundle/vim-endwise
 	url = git://github.com/tpope/vim-endwise.git
