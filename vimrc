@@ -74,6 +74,9 @@ source ~/dotfiles/vim_custom/vimrc_tabularize
 source ~/dotfiles/vim_custom/vimrc_taglist
 source ~/dotfiles/vim_custom/vimrc_gundo
 
+" ========= HABIT ========
+source ~/dotfiles/vim_custom/vimrc_habits
+
 " To enable the matchers of Vim
 runtime macros/matchit.vim
 
