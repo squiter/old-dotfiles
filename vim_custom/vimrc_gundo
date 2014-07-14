@@ -1,1 +1,1 @@
-noremap <F6> :GundoToggle<CR>
+noremap <F7> :GundoToggle<CR>
