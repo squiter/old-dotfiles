@@ -8,13 +8,7 @@ export DEFAULT_USER="squiter"
 export TERM="xterm-256color"
 
 # Add RVM to agnoster theme
-export RPROMPT="\$(~/.rvm/bin/rvm-prompt) [%D{%L:%M:%S %p}]"
-
-TMOUT=1
-
-TRAPALRM() {
-  zle reset-prompt
-}
+export RPROMPT="\$(~/.rvm/bin/rvm-prompt)"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
