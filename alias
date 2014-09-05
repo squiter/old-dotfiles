@@ -12,3 +12,9 @@ alias nibbler='ssh -i ~/.ssh/id_rsa_gateway _bsantos@nibbler0001.linux.locaweb.c
 
 # Locale
 alias locate='/usr/bin/mdfind -name'
+
+# Tmux
+alias tml="tmux list-sessions"
+alias tma="tmux -2 attach -t $1"
+alias tmk="tmux kill-session -t $1"
+alias tmb="tmux attach -t base || tmux new -s base"
