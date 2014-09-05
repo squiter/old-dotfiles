@@ -18,3 +18,7 @@ alias tml="tmux list-sessions"
 alias tma="tmux -2 attach -t $1"
 alias tmk="tmux kill-session -t $1"
 alias tmb="tmux attach -t base || tmux new -s base"
+
+# GIT
+alias gsupdate="git submodule foreach git pull origin master"
+alias gprune="git remote prune origin"
