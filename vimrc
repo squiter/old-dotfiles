@@ -1,6 +1,5 @@
-call pathogen#infect()
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+" Adding Vundle Config
+source ~/dotfiles/vim_custom/vundle
 
 set encoding=utf-8
 set mouse=a
