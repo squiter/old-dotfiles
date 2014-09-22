@@ -1,13 +1,18 @@
 h1. Installation:
 
-<pre><code>git clone git://github.com/squiter85/dotfiles.git
-cd dotfiles
+<pre><code>git clone git://github.com/squiter85/dotfiles.git ~/dotfiles
+cd ~/dotfiles
 sh install.sh
 </code></pre>
-Initialize and update all submodules
-<pre><code>git submodule init
-git submodule update
+
+Initialize and update all submodules:
+<pre><code>git submodule update --init
 </code></pre>
+
+Install Vim plugins with Vundle:
+<pre><code>vim +BundleInstall +qall
+</code></pre>
+
 Set zsh as default shell
 <pre><code>chsh -s /bin/zsh
 </code></pre>
