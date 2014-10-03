@@ -1,5 +1,5 @@
 " Adding Vundle Config
-source ~/dotfiles/vim/personal/vundle
+source ~/dotfiles/vim/personal/vundle.vim
 
 set encoding=utf-8
 set mouse=a
@@ -64,18 +64,18 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 " ==== VIM PLUGINS CONFIG ====
-source ~/dotfiles/vim/personal/indent_guides
-source ~/dotfiles/vim/personal/crtlp
-source ~/dotfiles/vim/personal/snipmate
-source ~/dotfiles/vim/personal/airline
-source ~/dotfiles/vim/personal/rspec
-source ~/dotfiles/vim/personal/tabularize
-source ~/dotfiles/vim/personal/taglist
-source ~/dotfiles/vim/personal/gundo
-source ~/dotfiles/vim/personal/functions
+source ~/dotfiles/vim/personal/indent_guides.vim
+source ~/dotfiles/vim/personal/crtlp.vim
+source ~/dotfiles/vim/personal/snipmate.vim
+source ~/dotfiles/vim/personal/airline.vim
+source ~/dotfiles/vim/personal/rspec.vim
+source ~/dotfiles/vim/personal/tabularize.vim
+source ~/dotfiles/vim/personal/taglist.vim
+source ~/dotfiles/vim/personal/gundo.vim
+source ~/dotfiles/vim/personal/functions.vim
 
 " ========= HABIT ========
-source ~/dotfiles/vim/personal/habits
+source ~/dotfiles/vim/personal/habits.vim
 
 " To enable the matchers of Vim
 runtime macros/matchit.vim
