@@ -72,6 +72,7 @@ source ~/dotfiles/vim/personal/rspec
 source ~/dotfiles/vim/personal/tabularize
 source ~/dotfiles/vim/personal/taglist
 source ~/dotfiles/vim/personal/gundo
+source ~/dotfiles/vim/personal/functions
 
 " ========= HABIT ========
 source ~/dotfiles/vim/personal/habits
@@ -136,3 +137,4 @@ map <leader>ctw :%s/\s\+$//<CR>
 
 " Adding = as 'underlines'
 map <leader>h1 yypVr=o
+
