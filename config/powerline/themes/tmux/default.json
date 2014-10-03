@@ -1,43 +1,24 @@
 {
-  "default_module": "powerline.segments.common",
   "segment_data": {
     "uptime": {
       "before": "⇑  "
-    },
-    "external_ip": {
-      "before": "ⓦ "
-    },
-    "date": {
-      "before": "⌚ "
     }
   },
   "segments": {
     "right": [
     {
-      "name": "uptime",
+      "function": "powerline.segments.common.sys.uptime",
       "priority": 50
     },
     {
-      "name": "external_ip",
+      "function": "powerline.segments.common.sys.system_load",
       "priority": 50
     },
     {
-      "name": "weather",
-      "priority": 50,
-      "args": {
-        "unit": "C",
-        "location_query": "sao_paulo, brazil"
-      }
+      "function": "powerline.segments.common.time.date"
     },
     {
-      "name": "system_load",
-      "priority": 50
-    },
-    {
-      "name": "date"
-    },
-    {
-      "name": "date",
+      "function": "powerline.segments.common.time.date",
       "args": {
         "format": "%H:%M",
         "istime": true
