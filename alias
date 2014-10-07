@@ -22,3 +22,4 @@ alias tmb="tmux attach -t base || tmux new -s base"
 # GIT
 alias gsupdate="git submodule foreach git pull origin master"
 alias gprune="git remote prune origin"
+alias gbdm="git branch --merged master | grep -v 'master$' | xargs git branch -d"
