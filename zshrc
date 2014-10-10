@@ -103,3 +103,6 @@ export PATH=/usr/local/bin:$PATH:$HOME/bin:$HOME/.rvm/bin
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$HOME/dotfiles/powerline/scripts:$PATH:$GOPATH/bin"
+
+### Added SML to PATH
+export PATH="$PATH:/usr/local/smlnj/bin"
