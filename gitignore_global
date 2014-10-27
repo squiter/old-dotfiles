@@ -45,3 +45,8 @@ tags
 # Vagrant files #
 #################
 .vagrant
+
+# AZK Files #
+# ######### #
+.azk
+Azkfile.js
