@@ -10,7 +10,7 @@ Initialize and update all submodules:
 </code></pre>
 
 Install Vim plugins with Vundle:
-<pre><code>vim +BundleInstall +qall
+<pre><code>vim +PluginInstall +qall
 </code></pre>
 
 Set zsh as default shell
