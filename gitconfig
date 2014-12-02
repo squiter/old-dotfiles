@@ -16,6 +16,7 @@
   type = cat-file -t
   dump = cat-file -p
   pr = pull --rebase
+  vdiff = difftool --tool=vimdiff --no-prompt
 [color]
   branch = auto
   diff = auto
