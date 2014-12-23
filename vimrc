@@ -11,6 +11,7 @@ set hidden              "hide buffers instead of closing them when you :q, keepi
 set hlsearch            "highlight all the matches in search
 set incsearch           "show search matches as you type
 set cursorline          "show a hightlight line in cursor
+set wmnu                "wild menu - to show in statusline a list of options to autocomplete
 
 " OSX Clipboard works with y, d and p - Make shure to install vim using:
 " brew install vim
