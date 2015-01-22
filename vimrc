@@ -139,3 +139,5 @@ map <leader>ctw :%s/\s\+$//<CR>
 " Adding = as 'underlines'
 map <leader>h1 yypVr=o
 
+" Highlight fucking 80 columns :/et &colorcolumn=join(range(81,999),",")
+let &colorcolumn=join(range(81,999),",")
