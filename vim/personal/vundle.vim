@@ -12,6 +12,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " ======================= My Plugins =============================
 
+Plugin 'AndrewRadev/splitjoin.vim.git'
 Plugin 'DataWraith/auto_mkdir.git'
 Plugin 'bling/vim-airline'
 Plugin 'chriskempson/base16-vim.git'
