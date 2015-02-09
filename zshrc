@@ -98,9 +98,6 @@ export DOCKER_HOST=tcp://127.0.0.1:4243
 # Set environment to Go
 export GOPATH=$HOME/go
 
-# Add ~/.azk/bin to PATH
-export PATH="$HOME/.azk/bin:$PATH"
-
 # Add ~/bin to my PATH
 export PATH=/usr/local/bin:$PATH:$HOME/bin:$HOME/.rvm/bin
 
