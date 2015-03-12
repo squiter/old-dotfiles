@@ -74,6 +74,7 @@ source ~/dotfiles/vim/personal/tabularize.vim
 source ~/dotfiles/vim/personal/taglist.vim
 source ~/dotfiles/vim/personal/gundo.vim
 source ~/dotfiles/vim/personal/functions.vim
+source ~/dotfiles/vim/personal/ctrlp-funky.vim
 
 " ========= HABIT ========
 source ~/dotfiles/vim/personal/habits.vim
