@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Entering in my dotfiles folder..."
+cd $HOME/dotfiles
+echo "Updating my submodules..."
+git submodule foreach git pull origin master
+echo "Updating my vim plugins..."
+vim +PluginUpdate +qa
+git st
+echo "Done! :)"
+cd -
