@@ -1,21 +1,29 @@
 #!/bin/sh
 
+# functions
+function tips {
+  if [ -e $1 ]; then
+    lines=()
+    while IFS= read -r line
+    do
+      lines[${#lines[@]}]="$line"
+    done < $1
+    size=${#lines[@]}
+    to_show=$(($RANDOM%$size))
+    echo "==> "${lines[$to_show]}
+  else
+    echo "No tips or todo's today! :)"
+  fi
+}
+
 # Copy last commit hash to clipboard on commit
 echo "==> Copying commit hash to clipboard..."
 git log -1 --format=format:%h | pbcopy
 
-# Add other post-commit hooks
-file=$HOME"/tellme"
-if [ -e $file ]; then
-  lines=()
-  while IFS= read -r line
-  do
-    lines[${#lines[@]}]="$line"
-  done < $file
-  size=${#lines[@]}
-  to_show=$(($RANDOM%$size))
-  echo "==> "${lines[$to_show]}
-  echo "=============================="
-else
-  echo "No tips or todo's today! :)"
-fi
+# print my tips and tricks
+tellme=$HOME"/tellme"
+prag=$HOME"/dotfiles/pragmatic-tips.txt"
+
+tips $tellme
+tips $prag
+echo "==============================================================="
