@@ -88,6 +88,9 @@ runtime macros/matchit.vim
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+" Automatic reload .vimrc when save it
+au BufWritePost vimrc so $MYVIMRC
+
 " Forget about shitt+; to use : to run commands ;)
 nnoremap ; :
 
