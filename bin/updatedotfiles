@@ -2,6 +2,8 @@
 
 echo "Entering in my dotfiles folder..."
 cd $HOME/dotfiles
+echo "Pulling my files"
+git pr
 echo "Updating my submodules..."
 git submodule foreach git pull origin master
 echo "Updating my vim plugins..."
