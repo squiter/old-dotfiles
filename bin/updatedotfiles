@@ -8,6 +8,13 @@ echo "=> Updating my submodules..."
 git submodule foreach git pull origin master
 echo "=> Updating my vim plugins..."
 vim +PluginUpdate +qa
+echo "=> Updating RVM"
+rvm get stable
+echo "=> Updating homebrew"
+brew update
+echo "=> Check for outdated homebrew libraries"
+brew outdated
+echo "=> Showing git status in ~/dotfiles"
 git st
 echo "=> Done! :)"
 cd -
