@@ -6,9 +6,10 @@ export DEFAULT_USER="squiter"
 
 # Forcing TERM to use 256 Colors - Fix Tmux wrong colors
 export TERM="xterm-256color"
-
-# Add RVM to agnoster theme
-export RPROMPT="\$(~/.rvm/bin/rvm-prompt)"
+if [ -f "~/.rvm/bin/rvm-prompt" ]; then
+  # Add RVM to agnoster theme
+  export RPROMPT="\$(~/.rvm/bin/rvm-prompt)"
+fi
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
