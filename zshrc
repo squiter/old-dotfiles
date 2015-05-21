@@ -88,6 +88,12 @@ if [ -f $HOME/.rvm/scripts/rvm ]; then
   source $HOME/.rvm/scripts/rvm
 fi
 
+# rbenv? :)
+if which rbenv > /dev/null; then
+  export RBENV_ROOT=/usr/local/var/rbenv
+  eval "$(rbenv init -)"
+fi
+
 # Adding specific configurations by enviroment
 if [ -f $HOME/.zsh_custons ]; then
   source $HOME/.zsh_custons
