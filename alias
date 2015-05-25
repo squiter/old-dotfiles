@@ -35,3 +35,5 @@ alias be="bundle exec"
 alias bi="bundle install"
 alias bu="bundle update"
 
+# Fuck!
+alias fuck="sudo $(history -p \!\!)"
