@@ -29,3 +29,9 @@ alias gupdatehook='find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd 
 
 # AZK & Docker
 [[ -d ~/.azk ]] && alias docker="azk docker"
+
+# Ruby & cia
+alias be="bundle exec"
+alias bi="bundle install"
+alias bu="bundle update"
+
