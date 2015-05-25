@@ -60,7 +60,7 @@ function mcd() {   [ -n "$1" ] && mkdir -p "$@" && cd "$1";   }
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rails ruby brew rvm heroku rake zsh-syntax-highlighting themes z)
+plugins=(git rails ruby brew rbenv heroku rake zsh-syntax-highlighting themes z)
 
 source $ZSH/oh-my-zsh.sh
 
