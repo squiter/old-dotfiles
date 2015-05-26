@@ -9,7 +9,19 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-# Showing RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+# rbenv? :)
+if which rbenv > /dev/null; then
+  export RBENV_ROOT=/usr/local/var/rbenv
+  eval "$(rbenv init -)"
+fi
 
-PS1="$MAGENTA[\$(~/.rvm/bin/rvm-prompt)]$YELLOW\$(parse_git_branch)$DEFAULT_COLOR $PS1"
+source '/usr/local/Cellar/rbenv/0.4.0/completions/rbenv.bash'# prompt with ruby version
+
+# rbenv version | sed -e 's/ .*//'
+__rbenv_ps1 ()
+{
+  rbenv_ruby_version=`rbenv version | sed -e 's/ .*//'`
+  printf $rbenv_ruby_version
+}
+
+PS1="$MAGENTA[\$(__rbenv_ps1)]$YELLOW\$(parse_git_branch)$DEFAULT_COLOR $PS1"

@@ -19,9 +19,6 @@ fi
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
-# Add RVM to PATH for scripting
-PATH=$PATH:$HOME/.rvm/bin
-
 # Time tracking for terminal
 PROMPT_TITLE='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"'
 export PROMPT_COMMAND="${PROMPT_COMMAND} ${PROMPT_TITLE}; "
