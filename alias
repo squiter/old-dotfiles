@@ -37,3 +37,6 @@ alias bu="bundle update"
 
 # Fuck!
 alias fuck="sudo $(history -p \!\!)"
+
+# Emacs GUI
+alias emacs='open -a /Applications/Emacs.app $1'
