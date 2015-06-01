@@ -27,9 +27,6 @@ alias gbdm="git branch --merged master | grep -v 'master$' | xargs git branch -d
 # GIT - Update all post-commit hook in repositories inside this folder
 alias gupdatehook='find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && rm .git/hooks/post-commit && git init ." \;'
 
-# AZK & Docker
-[[ -d ~/.azk ]] && alias docker="azk docker"
-
 # Ruby & cia
 alias be="bundle exec"
 alias bi="bundle install"
