@@ -95,7 +95,7 @@ fi
 
 # rbenv? :)
 if which rbenv > /dev/null; then
-  eval "$(rbenv init -)"
+  eval "$(rbenv init - zsh)"
 fi
 
 # Set environment to Go

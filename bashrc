@@ -11,7 +11,7 @@ function parse_git_branch {
 
 # rbenv? :)
 if which rbenv > /dev/null; then
-  eval "$(rbenv init -)"
+  eval "$(rbenv init - bash)"
 fi
 
 source '/usr/local/Cellar/rbenv/0.4.0/completions/rbenv.bash'# prompt with ruby version
