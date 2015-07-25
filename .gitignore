@@ -8,3 +8,4 @@ emacs.d/bookmarks
 emacs.d/.last-package-update-day
 emacs.d/.org-id-locations
 emacs.d/ido.last
+emacs.d/eshell
