@@ -68,11 +68,8 @@ autocmd BufWinLeave * call clearmatches()
 source ~/dotfiles/vim/personal/indent_guides.vim
 source ~/dotfiles/vim/personal/crtlp.vim
 source ~/dotfiles/vim/personal/snipmate.vim
-source ~/dotfiles/vim/personal/airline.vim
-source ~/dotfiles/vim/personal/rspec.vim
 source ~/dotfiles/vim/personal/tabularize.vim
 source ~/dotfiles/vim/personal/taglist.vim
-source ~/dotfiles/vim/personal/gundo.vim
 source ~/dotfiles/vim/personal/functions.vim
 source ~/dotfiles/vim/personal/ctrlp-funky.vim
 
