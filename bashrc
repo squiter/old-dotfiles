@@ -35,3 +35,6 @@ fi
 . ~/.alias
 
 PS1="$MAGENTA[\$(__rbenv_ps1)]$YELLOW\$(parse_git_branch)$DEFAULT_COLOR $PS1"
+
+### Add Haskell bin paths
+export PATH="/Library/Frameworks/GHC.framework/Versions/Current/usr/bin/:/Library/Haskell/bin:$HOME/Library/Haskell/bin:$PATH";

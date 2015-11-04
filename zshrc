@@ -110,6 +110,9 @@ export PATH="/usr/local/heroku/bin:$HOME/dotfiles/powerline/scripts:$PATH:$GOPAT
 ### Added SML to PATH
 export PATH="$PATH:/usr/local/smlnj/bin"
 
+### Add Haskell bin paths
+export PATH="/Library/Frameworks/GHC.framework/Versions/Current/usr/bin/:/Library/Haskell/bin:$HOME/Library/Haskell/bin:$PATH";
+
 # add this configuration to ~/.zshrc
 export HISTFILE=~/.zsh_history  # ensure history file visibility
 export HH_CONFIG=hicolor        # get more colors
