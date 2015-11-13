@@ -1,0 +1,1 @@
+0 * * * * /sbin/ifconfig en0 | grep 'inet ' | cut -f 2 -d ' ' > ~/Dropbox/scripts/`hostname`.ip
