@@ -43,3 +43,6 @@ alias hodor-up="bundle exec rails s -p 3002"
 
 # Emacs GUI
 alias emacs='open -a /Applications/Emacs.app $1'
+
+# Ansible update
+alias update-dotfiles='cd ~/projetos/ansible-dev && ansible-playbook -i inventory/hosts osx.yml && cd -'
