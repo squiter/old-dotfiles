@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -eumo pipefail
+
+CAS_USER=${CAS_USER:-hosting-provisioning}
+CAS_PASS=${CAS_PASS:-inicial1234}
+CAS_URL=${CAS_URL:-https://systems-login.systemintegration.locaweb.com.br}
+
+tkt() {
+    echo "$(curl -iks -XPOST -d "username=$1&password=$2" $3/v1/tickets | grep "Location: " | sed 's/Location\: //' | tr -d '\r')"
+}
+
+st() {
+    local ticket=$(tkt $CAS_USER $CAS_PASS $CAS_URL)
+    echo $(curl -ksb -XPOST -d "service=$1" "$ticket")
+}
+
+service=`echo $1 | awk -F/ '{ print $3 }'`
+st=$(st $service)
+
+curl -H "Service-Ticket: $st" $*
