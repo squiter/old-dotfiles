@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+set -eumo pipefail
+
+CAS_USER=${CAS_USER:-hosting-provisioning}
+CAS_PASS=${CAS_PASS:-inicial1234}
+CAS_URL=${CAS_URL:-https://systems-login.systemintegration.locaweb.com.br}
+GREEN='\033[1;32m'
+NC='\033[0m'
+provisioning_id=$1
+change_to_status=$2
+
+tkt() {
+    echo "$(curl -iks -XPOST -d "username=$1&password=$2" $3/v1/tickets | grep "Location: " | sed 's/Location\: //' | tr -d '\r')"
+}
+
+st() {
+    local ticket=$(tkt $CAS_USER $CAS_PASS $CAS_URL)
+    echo $(curl -ksb -XPOST -d "service=$1" "$ticket")
+}
+
+fetch_provisioning() {
+    local url="${SAPI_HOST:-https://sapi.systemintegration.locaweb.com.br}/provisionings/$1"
+    curl -H "Service-Ticket: $2" "$url" -ks
+}
+
+info() {
+  echo -e "${GREEN}$1${NC}"
+}
+
+change_provisioning_status() {
+    local url="${SAPI_HOST:-https://sapi.systemintegration.locaweb.com.br}/provisionings/$2/$1"
+    local service=`echo $url | awk -F/ '{ print $3 }'`
+    local st=$(st $service)
+
+    info "=== Fetching provisioning $1\n"
+    fetch_provisioning $1 $st
+
+    info "\n\n=== Changing status\n"
+    curl -H "Service-Ticket: $st" -X POST "$url" -iks
+
+    info "\n\n=== Fetching provisioning $1\n"
+    fetch_provisioning $1 $st
+}
+
+change_provisioning_status $provisioning_id $change_to_status
